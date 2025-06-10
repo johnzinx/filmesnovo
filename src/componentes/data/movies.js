@@ -2,58 +2,58 @@ const DATA =
 [
     {
         id:'01',
-        nome:'Jurassic Park',
-        nota:'7',
-        imagem:"https://musicart.xboxlive.com/7/e06d5100-0000-0000-0000-000000000002/504/image.jpg",
+        nome:'The Last of Us: PART II',
+        nota:'R$150.00',
+        imagem:"https://upload.wikimedia.org/wikipedia/pt/thumb/9/96/The_Last_of_Us_2_capa.png/330px-The_Last_of_Us_2_capa.png",
  
     },
     {
         id:'02',
-        nome:'Gente Grande',
-        nota:'10',
-        imagem:"https://m.media-amazon.com/images/S/pv-target-images/28ba30adb15abcf10253d4c9e07575a206dfd89e48c37714b5f8603ce1575bf9.jpg",
+        nome:'Ghost of Yōtei ',
+        nota:'R$350.00',
+        imagem:"https://m.media-amazon.com/images/M/MV5BODA2YzRkODktNTIwYi00ZDk1LThlMTAtYzE4MGEyODM4NzZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
  
     },
     {
         id:'03',
-        nome:'Velozes e Furiosos',
-        nota:'10',
-        imagem:"https://sao-paulo.estadao.com.br/blogs/caminhadas-urbanas/wp-content/uploads/sites/262/2018/11/infografico-velozes-furiosos-topo.jpg",
+        nome:'God of War Ragnarök',
+        nota:'R$139.90',
+        imagem:"https://upload.wikimedia.org/wikipedia/pt/a/a5/God_of_War_Ragnar%C3%B6k_capa.jpg",
  
     },
     {
         id:'04',
-        nome:'Thor',
-        nota:'10',
-        imagem:"https://upload.wikimedia.org/wikipedia/pt/9/9f/Thor_Poster.jpg",
+        nome:'Uncharted: Coleção Legado dos Ladrões',
+        nota:'R$199,90',
+        imagem:"https://image.api.playstation.com/vulcan/ap/rnd/202111/2000/PV9y7Xq2mcDcx2PtpM8GYYO0.png",
  
     },
     {
         id:'05',
-        nome:'Invocação do Mal',
-        nota:'10',
-        imagem:"https://br.web.img2.acsta.net/pictures/210/166/21016629_2013062820083878.jpg",
+        nome:'Indiana Jones e o Grande Círculo',
+        nota:'R$349,99',
+        imagem:"https://store-images.s-microsoft.com/image/apps.394.14050533476382116.9ce9be62-6690-4c40-8e76-7e5af2a256fb.23519966-541f-46af-94a3-68d956e7cf85",
  
     },
     {
         id:'06',
-        nome:'Circulo de Fogo',
-        nota:'10',
-        imagem:"https://m.media-amazon.com/images/S/pv-target-images/239f4cad8e461a20e7e83d314ab3b41407b82831da86d0a4d3102c88d443bc67.jpg",
+        nome:'Forza Motorsport 8',
+        nota:'R$329.90',
+        imagem:"https://cms-assets.xboxservices.com/assets/30/7c/307c168b-ca18-49a3-999d-2b96d1a91666.jpg?n=Forza-Motrosport_GLP-Page-Hero-0_20th-Anniversary_1083x1222.jpg",
  
     },
     {
         id:'07',
-        nome:'Sherk',
-        nota:'10',
-        imagem:"https://m.media-amazon.com/images/I/919ZUTtPbXL._AC_UF1000,1000_QL80_.jpg",
+        nome:'Halo: The Master Chief Collection',
+        nota:'R$42.90',
+        imagem:"https://upload.wikimedia.org/wikipedia/pt/a/a2/Halo_TMCC_KeyArt_Vert_2019_Final.jpg",
  
     },
     {
         id:'08',
-        nome:'Predador',
-        nota:'10',
-        imagem:"https://http2.mlstatic.com/D_NQ_NP_634906-MLB76744057314_062024-O-quadro-poster-filme-the-predador-cult-sci-fi-ficco-terror.webp",
+        nome:'Microsoft Flight Simulator',
+        nota:'R$165.00',
+        imagem:"https://assets.xboxservices.com/assets/97/70/97706ebe-894a-47d5-9720-ad1e18092076.jpg?n=Microsoft-Flight-Simulator_GLP-Page-Hero-0_1083x1222_07.jpg",
  
     },
     {

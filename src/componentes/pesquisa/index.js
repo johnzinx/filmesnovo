@@ -7,7 +7,7 @@ export default function Pesquisa(){
 
         <View style={styles.containerSearch}>
 
-        <TextInput style={styles.inputSearch} placeholder="Digite o filme que deseja buscar"></TextInput>
+        <TextInput style={styles.inputSearch} placeholder="Digite o jogo que deseja buscar"></TextInput>
 
       </View>
     )

@@ -17,7 +17,7 @@ export default function Detalhes() {
       <View style={styles.content}>
         <Image style={styles.image} source={{ uri: route.params.imagem }} />
         <Text style={styles.titulo}>{route.params.titulo}</Text>
-        <Text style={styles.nota}>Nota: {route.params.nota}</Text>
+        <Text style={styles.nota}>Preço: {route.params.nota}</Text>
       </View>
     </View>
   );

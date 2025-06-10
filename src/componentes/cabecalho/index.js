@@ -14,7 +14,7 @@ export default function Cabecalho(){
 
                 </TouchableOpacity>
 
-                <Text style={styles.textHeader}>TEC FILMES</Text>
+                <Text style={styles.textHeader}>DJW GAMES</Text>
 
               </View>
     );

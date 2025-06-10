@@ -3,7 +3,7 @@ import Rotas from './src/componentes/rotas';
 
 
 export default function App() {
-  const imagem = Math.floor(Math.random() * 4 + 1);
+  const imagem = Math.floor(Math.random());
 
   return (
 

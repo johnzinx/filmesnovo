@@ -6,7 +6,7 @@ export default function Banner(){
     return (
 
         <>
-            <Text style={styles.textBanner}> Em cartaz </Text>
+            <Text style={styles.textBanner}>Jogos Disponiveis </Text>
 
             <Image style={styles.imageBanner} source={require(`../../../assets/cinemaLOGOGPT.png`)} />
             
