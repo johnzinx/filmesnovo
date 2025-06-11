@@ -1,26 +1,19 @@
-import { StyleSheet, Text, View, TouchableOpacity, TextInput, Image, FlatList } from 'react-native';
+import { StyleSheet, ScrollView } from 'react-native';
 import Rotas from './src/componentes/rotas';
 
-
 export default function App() {
-  const imagem = Math.floor(Math.random());
-
   return (
-
-
-    <Rotas />
-
-   
+    <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
+      <Rotas />
+    </ScrollView>
   );
-
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#141a29',
+    backgroundColor: 'white',
+    padding: 16,
     alignItems: 'center',
   },
-
-
 });
