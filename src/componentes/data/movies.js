@@ -30,8 +30,39 @@ const DATA = [
       imagem: "https://image.api.playstation.com/vulcan/ap/rnd/202111/2000/PV9y7Xq2mcDcx2PtpM8GYYO0.png",
       descricao: 'Reviva as aventuras lendárias de Nathan Drake nesta coleção remasterizada.',
       plataforma: 'PlayStation',
+    },
+    {
+      id: '05',
+      nome: 'Horizon Forbidden West',
+      nota: 'R$249.90',
+      imagem: "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/ki0STHGAkIF06Q4AU8Ow4OkV.png",
+      descricao: 'Acompanhe Aloy em uma nova jornada por terras misteriosas e enfrente máquinas colossais.',
+      plataforma: 'PlayStation',
+    },
+    {
+      id: '06',
+      nome: 'Gran Turismo 7',
+      nota: 'R$299.90',
+      imagem: "https://image.api.playstation.com/vulcan/ap/rnd/202109/1321/eFGBuaRr21HUpGtsy3biwJip.png",
+      descricao: 'Experimente a simulação de corrida definitiva com gráficos realistas e centenas de carros.',
+      plataforma: 'PlayStation',
+    },
+    {
+      id: '07',
+      nome: 'Marvel’s Spider-Man: Miles Morales',
+      nota: 'R$179.90',
+      imagem: "https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/PRfYtTZQsuj3ALrBXGL8MjAH.jpg",
+      descricao: 'Viva uma nova aventura como Miles Morales e descubra seus poderes de Homem-Aranha.',
+      plataforma: 'PlayStation',
+    },
+    {
+      id: '08',
+      nome: 'Ratchet & Clank: Em Uma Outra Dimensão',
+      nota: 'R$229.90',
+      imagem: "https://image.api.playstation.com/vulcan/ap/rnd/202101/2921/OaihN9qh0zhrONi8M6x7Pexy.jpg",
+      descricao: 'Viaje entre dimensões com Ratchet e Clank em uma aventura cheia de ação e humor.',
+      plataforma: 'PlayStation',
     }
   ];
   
   export default DATA;
-  

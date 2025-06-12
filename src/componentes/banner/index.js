@@ -8,8 +8,8 @@ export default function Banner(){
         <>
             <Text style={styles.textBanner}>Jogos Disponiveis </Text>
 
-            <Image style={styles.imageBanner} source={require(`../../../assets/cinemaLOGOGPT.png`)} />
-            
+            <Image style={styles.imageBanner} source={require(`../../../assets/logosla.png`)} />
+
         </>
     );
 }

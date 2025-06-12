@@ -22,7 +22,7 @@ const NINTENDO = [
       imagem: "https://images.kabum.com.br/produtos/fotos/sync_mirakl/751776/large/Animal-Crossing-New-Horizons-Nintendo-Switch_1743510045.jpg",
       descricao: 'Crie sua própria ilha paradisíaca e interaja com amigos em um mundo relaxante e cheio de possibilidades.',
       plataforma: 'Nintendo',
-  },
+    },
     {
       id: '04',
       nome: 'Metroid Dread',
@@ -31,7 +31,38 @@ const NINTENDO = [
       descricao: 'Continue a saga de Samus Aran neste jogo de ação e aventura cheio de suspense e exploração.',
       plataforma: 'Nintendo',
     },
-  ];
-  
-  export default NINTENDO;
-  
+    {
+      id: '05',
+      nome: 'Pokémon Legends: Arceus',
+      nota: 'R$299.90',
+      imagem: "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Pokemon_Legends_Arceus_cover.jpg/250px-Pokemon_Legends_Arceus_cover.jpg",
+      descricao: 'Explore a antiga região de Hisui e descubra a origem dos Pokémon em uma aventura inovadora.',
+      plataforma: 'Nintendo',
+    },
+    {
+      id: '06',
+      nome: 'Fire Emblem: Three Houses',
+      nota: 'R$239.90',
+      imagem: "https://upload.wikimedia.org/wikipedia/pt/c/c8/Fire_Emblem_Three_Houses_capa.png",
+      descricao: 'Lidere estudantes em batalhas táticas e tome decisões que mudarão o destino de Fódlan.',
+      plataforma: 'Nintendo',
+    },
+    {
+      id: '07',
+      nome: 'Mario Kart 8 Deluxe',
+      nota: 'R$229.90',
+      imagem: "https://www.vgdb.com.br/gf/fotos/games/media_44581/mario-kart-8-deluxe-44581.jpg",
+      descricao: 'Corra com Mario e seus amigos em pistas incríveis e desafie jogadores do mundo todo.',
+      plataforma: 'Nintendo',
+    },
+    {
+      id: '08',
+      nome: 'Luigi\'s Mansion 3',
+      nota: 'R$199.90',
+      imagem: "https://upload.wikimedia.org/wikipedia/pt/1/17/Luigis_Mansion_3_capa.png",
+      descricao: 'Ajude Luigi a resgatar seus amigos em um hotel mal-assombrado cheio de enigmas e fantasmas.',
+      plataforma: 'Nintendo',
+    },
+];
+
+export default NINTENDO;

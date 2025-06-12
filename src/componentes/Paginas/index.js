@@ -11,14 +11,13 @@ export default function Home() {
   return (
 
     <View style={styles.container}>
-    
 
       <Cabecalho />
 
       <Pesquisa />
 
       <Banner />
-      <View style={{ width: "100%", height: 890 }}>
+      <View style={{ width: "100%", height: 1000 }}>
         <Text style={styles.sectionTitle}>PlayStation</Text>
         <FlatList
 
@@ -115,4 +114,21 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     textAlign: 'center',
   },
+  sidebar: {
+    width: 100,
+    backgroundColor: '#1f2a44',
+    paddingTop: 50,
+    alignItems: 'center',
+  },
+  sidebarItem: {
+    color: 'white',
+    marginVertical: 15,
+    fontSize: 14,
+  },
+  mainContent: {
+    flex: 1,
+    alignItems: 'center',
+    paddingBottom: 50,
+  },
+  
 });
