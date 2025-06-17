@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   viewHeader: {
     width: "100%",
     height: 70,
-    backgroundColor: "#3887fe",
+    backgroundColor: "gray",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
@@ -15,8 +15,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.18,
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 4 },
-    borderBottomLeftRadius: 18,
-    borderBottomRightRadius: 18,
   },
   textHeader: {
     flex: 1,

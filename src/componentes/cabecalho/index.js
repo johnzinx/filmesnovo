@@ -1,21 +1,14 @@
-import {Text, View, TouchableOpacity } from "react-native"
+import { Text, View, TouchableOpacity } from "react-native";
 import { Feather } from '@expo/vector-icons';
-import styles  from './style';
+import styles from './style';
 
-
-export default function Cabecalho(){
+export default function Cabecalho() {
     return (
-
         <View style={styles.viewHeader}>
-
-                <TouchableOpacity>
-
-                  <Feather style={{ marginLeft: -70 }} name="menu" size={36} color="#FFF" />
-
-                </TouchableOpacity>
-
-                <Text style={styles.textHeader}>DJW GAMES</Text>
-
-              </View>
+            <TouchableOpacity>
+                <Feather style={styles.icon} name="menu" size={36} />
+            </TouchableOpacity>
+            <Text style={styles.textHeader}>DJW GAMES</Text>
+        </View>
     );
 }

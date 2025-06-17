@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   botaoCompra: {
-    backgroundColor: "#3887fe",
+    backgroundColor: "gray",
     paddingVertical: 13,
     paddingHorizontal: 32,
     borderRadius: 12,
