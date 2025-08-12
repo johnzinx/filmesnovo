@@ -6,9 +6,42 @@ import CardFilmes from "../cardsfilmes/index"
 import DATA from "../data/movies"
 import XBOX from "../data/xbox"
 import NINTENDO from "../data/nintendo"
+import {useState, useEffect } from 'react';
 
 export default function Home() {
+
+  const [movies, setMovies] = useState([]);
+
+  useEffect(()=>{
+
+
+      async function buscarFilmes(){
+        const url = 'https://api.themoviedb.org/3/movie/top_rated?language=pt-BR&page=1';
+        const options = {
+          method: 'GET',
+          headers: {
+            accept: 'application/json',
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxOTg5YmMxZjRjYjgxMjMwMjM2ZjIxNGM2Y2RlYWE4MCIsIm5iZiI6MTc1NTAyMTU3OC41MTYsInN1YiI6IjY4OWI4MTBhMmY3NjBiMTQ5ZDFhMzIyOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.iwvvtebdC32yXRl-9lTdlvBIOTV17dpcwD4OouxtlJ4'
+          }
+        };
+        
+        const responses = await fetch (url, options)
+        const data = await responses.json();
+        console.log(data);
+        
+        setMovies(data.results)
+
+
+      }
+
+      buscarFilmes()
+
+
+  
+  },[])
+
   return (
+
 
     <View style={styles.container}>
 
@@ -21,20 +54,20 @@ export default function Home() {
         <Text style={styles.sectionTitle}>PlayStation</Text>
         <FlatList
 
-        
-          
+
+
           showsHorizontalScrollIndicator={false}
           horizontal={true}
-          data={DATA}
+          data={movies}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
 
             <CardFilmes
 
-              titulo={item.nome}
-              nota={item.nota}
-              imagem={item.imagem}
-              descricao={item.descricao}      
+              titulo={item.title}
+              nota={item.note_average}
+              imagem={item.poster_path}
+              descricao={item.descricao}
               plataforma={item.plataforma}
 
             />
@@ -43,11 +76,14 @@ export default function Home() {
 
           )}
         />
+
+
+
         <Text style={styles.sectionTitle}>Xbox</Text>
         <FlatList
 
-        
-          
+
+
           showsHorizontalScrollIndicator={false}
           horizontal={true}
           data={XBOX}
@@ -59,7 +95,7 @@ export default function Home() {
               titulo={item.nome}
               nota={item.nota}
               imagem={item.imagem}
-              descricao={item.descricao}      
+              descricao={item.descricao}
               plataforma={item.plataforma}
 
             />
@@ -71,8 +107,8 @@ export default function Home() {
         <Text style={styles.sectionTitle}>Nintendo</Text>
         <FlatList
 
-        
-          
+
+
           showsHorizontalScrollIndicator={false}
           horizontal={true}
           data={NINTENDO}
@@ -84,7 +120,7 @@ export default function Home() {
               titulo={item.nome}
               nota={item.nota}
               imagem={item.imagem}
-              descricao={item.descricao}      
+              descricao={item.descricao}
               plataforma={item.plataforma}
 
             />
@@ -95,8 +131,10 @@ export default function Home() {
         />
       </View>
     </View>
-    
+
+  
   )
+
 
 
 }
@@ -130,5 +168,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingBottom: 50,
   },
-  
+
 });
