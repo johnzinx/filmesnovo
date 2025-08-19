@@ -6,9 +6,9 @@ export default function Banner(){
     return (
 
         <>
-            <Text style={styles.textBanner}>Jogos Disponiveis </Text>
+            <Text style={styles.textBanner}>Filmes Disponiveis </Text>
 
-            <Image style={styles.imageBanner} source={require(`../../../assets/logosla.png`)} />
+            <Image style={styles.imageBanner} source={require(`../../../assets/filmeBan.jpg`)} />
 
         </>
     );

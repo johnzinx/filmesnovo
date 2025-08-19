@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   textBanner: {
     fontSize: 24,
     fontWeight: "700",
-    color: "gray",
+    color: "orange",
     textAlign: "center",
     marginBottom: 12,
     letterSpacing: 1.2,

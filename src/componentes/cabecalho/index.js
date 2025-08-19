@@ -8,7 +8,7 @@ export default function Cabecalho() {
             <TouchableOpacity>
                 <Feather style={styles.icon} name="menu" size={36} />
             </TouchableOpacity>
-            <Text style={styles.textHeader}>DJW GAMES</Text>
+            <Text style={styles.textHeader}>DJW MOVIES</Text>
         </View>
     );
 }
