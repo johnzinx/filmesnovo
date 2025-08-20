@@ -47,7 +47,7 @@ export default function Home() {
 
 
     async function buscarFilmesRe() {
-      const url = 'https://api.themoviedb.org/3/movie/popular?language=pt-br-US&page=1';
+      const url = 'https://api.themoviedb.org/3/movie/popular?language=pt-BR&page=1';
       const options = {
         method: 'GET',
         headers: {
@@ -72,6 +72,63 @@ export default function Home() {
 
   }, [])
 
+  const [movies2, setMovies2] = useState([]);
+
+  useEffect(() => {
+
+
+    async function buscarFilmes2() {
+      const url = 'https://api.themoviedb.org/3/movie/now_playing?language=pt-BR&page=1';
+      const options = {
+        method: 'GET',
+        headers: {
+          accept: 'application/json',
+          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNTEyZWJkNTExZTdhZWQzNWZkNzE0MzE2ZTU0YmMwMCIsIm5iZiI6MTc1NTcwNjk5NS4wMDcsInN1YiI6IjY4YTVmNjczMzJjZGE4ZjBhZmZkMjc5NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kVJb8PiBJYPHS9BfuRiNIP4o8NF-Ff26a2Qz8F-66Ew'
+        }
+      };
+
+
+      const responses = await fetch(url, options)
+      const data2 = await responses.json();
+      console.log(data2);
+
+      setMovies2(data2.results)
+
+
+    }
+
+    buscarFilmes2()
+
+  }, [])
+
+  const [movies3, setMovies3] = useState([]);
+
+  useEffect(() => {
+
+
+    async function buscarFilmes3() {
+      const url = 'https://api.themoviedb.org/3/movie/upcoming?language=pt-BR&page=1';
+      const options = {
+        method: 'GET',
+        headers: {
+          accept: 'application/json',
+          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNTEyZWJkNTExZTdhZWQzNWZkNzE0MzE2ZTU0YmMwMCIsIm5iZiI6MTc1NTcwNjk5NS4wMDcsInN1YiI6IjY4YTVmNjczMzJjZGE4ZjBhZmZkMjc5NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kVJb8PiBJYPHS9BfuRiNIP4o8NF-Ff26a2Qz8F-66Ew'
+        }
+      };
+      
+
+      const responses = await fetch(url, options)
+      const data3 = await responses.json();
+      console.log(data3);
+
+      setMovies3(data3.results)
+
+
+    }
+
+    buscarFilmes3()
+
+  }, [])
 
 
   return (
@@ -84,7 +141,7 @@ export default function Home() {
       <Pesquisa />
 
       <Banner />
-      <View style={{ width: "100%", height: 1000 }}>
+      <View style={{ width: "100%", height: 1200 }}>
         <Text style={styles.sectionTitle}>Filmes em Cartaz</Text>
         <FlatList
 
@@ -101,8 +158,8 @@ export default function Home() {
               titulo={item.title}
               nota={item.note_average}
               imagem={item.poster_path}
-              descricao={item.descricao}
-              plataforma={item.plataforma}
+              descricao={item.overview}
+              plataforma={item.release_date}
 
             />
 
@@ -113,7 +170,7 @@ export default function Home() {
 
         />
 
-        <Text style={styles.sectionTitle}>Filmes Recomendados</Text>
+        <Text style={styles.sectionTitle}>Ultimos Lançamentos</Text>
         <FlatList
 
 
@@ -129,8 +186,64 @@ export default function Home() {
               titulo={item.title}
               nota={item.note_average}
               imagem={item.poster_path}
-              descricao={item.descricao}
-              plataforma={item.plataforma}
+              descricao={item.overview}
+              plataforma={item.release_date}
+
+            />
+
+
+
+          )}
+
+
+        />
+
+        <Text style={styles.sectionTitle}>Em Alta</Text>
+        <FlatList
+
+
+
+          showsHorizontalScrollIndicator={false}
+          horizontal={true}
+          data={movies2}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+
+            <CardFilmes
+
+              titulo={item.title}
+              nota={item.note_average}
+              imagem={item.poster_path}
+              descricao={item.overview}
+              plataforma={item.release_date}
+
+            />
+
+
+
+          )}
+
+
+        />
+
+<Text style={styles.sectionTitle}>Em Breve</Text>
+        <FlatList
+
+
+
+          showsHorizontalScrollIndicator={false}
+          horizontal={true}
+          data={movies3}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+
+            <CardFilmes
+
+              titulo={item.title}
+              nota={item.note_average}
+              imagem={item.poster_path}
+              descricao={item.overview}
+              plataforma={item.release_date}
 
             />
 
@@ -144,7 +257,7 @@ export default function Home() {
 
 
 
-        /
+
 
 
 

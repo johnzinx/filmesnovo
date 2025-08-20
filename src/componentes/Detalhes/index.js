@@ -17,7 +17,7 @@ export default function Detalhes() {
 
       <ScrollView contentContainerStyle={styles.scrollContainer} showsVerticalScrollIndicator={false}>
         <View style={styles.content}>
-          <Image style={styles.image} source={{ uri: imagem }} />
+          <Image style={styles.image} source={{ uri: `https://image.tmdb.org/t/p/original${imagem}` }} />
 
           <Text style={styles.titulo}>{titulo}</Text>
           <Text style={styles.preco}>{nota}</Text>
@@ -25,11 +25,11 @@ export default function Detalhes() {
           <Text style={styles.subtitulo}>Descrição</Text>
           <Text style={styles.descricao}>{descricao}</Text>
 
-          <Text style={styles.subtitulo}>Plataforma</Text>
+          <Text style={styles.subtitulo}>Data de lançamento</Text>
           <Text style={styles.plataforma}>{plataforma}</Text>
 
           <TouchableOpacity style={styles.botaoCompra}>
-            <Text style={styles.textoBotao}>Comprar agora</Text>
+            <Text style={styles.textoBotao}>Alugar agora</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.botaoCarrinho}>
