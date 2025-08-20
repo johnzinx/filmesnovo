@@ -25,6 +25,7 @@ export default function Home() {
         }
       };
 
+
       const responses = await fetch(url, options)
       const data = await responses.json();
       console.log(data);
@@ -39,6 +40,39 @@ export default function Home() {
 
 
   }, [])
+
+  const [movies1, setReco] = useState([]);
+
+  useEffect(() => {
+
+
+    async function buscarFilmesRe() {
+      const url = 'https://api.themoviedb.org/3/movie/popular?language=pt-br-US&page=1';
+      const options = {
+        method: 'GET',
+        headers: {
+          accept: 'application/json',
+          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNTEyZWJkNTExZTdhZWQzNWZkNzE0MzE2ZTU0YmMwMCIsIm5iZiI6MTc1NTcwNjk5NS4wMDcsInN1YiI6IjY4YTVmNjczMzJjZGE4ZjBhZmZkMjc5NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kVJb8PiBJYPHS9BfuRiNIP4o8NF-Ff26a2Qz8F-66Ew'
+        }
+      };
+  
+
+      const responses = await fetch(url, options)
+      const data1 = await responses.json();
+      console.log(data1);
+
+      setReco(data1.results)
+
+
+    }
+
+    buscarFilmesRe()
+
+
+
+  }, [])
+
+
 
   return (
 
@@ -75,6 +109,36 @@ export default function Home() {
 
 
           )}
+
+
+        />
+
+        <Text style={styles.sectionTitle}>Filmes Recomendados</Text>
+        <FlatList
+
+
+
+          showsHorizontalScrollIndicator={false}
+          horizontal={true}
+          data={movies1}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+
+            <CardFilmes
+
+              titulo={item.title}
+              nota={item.note_average}
+              imagem={item.poster_path}
+              descricao={item.descricao}
+              plataforma={item.plataforma}
+
+            />
+
+
+
+          )}
+
+
         />
 
 
@@ -83,7 +147,9 @@ export default function Home() {
         /
 
 
+
       </View>
+
     </View>
 
 
